@@ -109,5 +109,7 @@ describe('getData', () => {
     const data = await getData()
     expect(axios.get).toBeCalledTimes(1)
     expect(data).toEqual(['1', '2', '3', '4'])
+    // создает снимок результата
+    expect(data).toMatchSnapshot(['1', '2', '3', '4'])
   })
 })
