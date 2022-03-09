@@ -1,3 +1,6 @@
 export const square = (value: number) => {
-  return value * value;
+  if (value === 1) {
+    return 1
+  }
+  return Math.pow(value, 2);
 }
