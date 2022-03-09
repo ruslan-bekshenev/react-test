@@ -17,7 +17,7 @@ describe('square', () => {
     const spyMathPow = jest.spyOn(Math, 'pow')
     square(2);
     // Считает сколько раз вызывается функция
-    expect(spyMathPow).toBeCalledTimes(2)
+    expect(spyMathPow).toBeCalledTimes(1)
   })
 
   afterEach(() => {
